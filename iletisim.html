@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        body {
+            background-color: mintcream;
+        }
+
+        a {
+            text-decoration: none;
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        h1 {
+            font-family: 'Courier New', Courier, monospace
+        }
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+        li {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            color: darkblue;
+        }
+        label {
+            font-size: 20px;
+            color:royalblue;
+        }
+        input {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Anasayfa</a>
+        <a href="./hakkinda.html">Hakkımızda</a>
+        <a href="./servisler.html">Servisler</a>
+        <a href="./iletisim.html">İletişim</a>
+    </nav>
+    
+    <main>
+        <h2>İletişim Bilgileri</h2>
+        <p>Bize aşağıdaki bilgilerden ulaşabilirsiniz:</p>
+
+        <ul>
+            <li>Adres: İstiklal Caddesi No:12, İstanbul-Taksim</li>
+            <li>Telefon: +90 123 456 78 90</li>
+            <li>E-posta: turistrehberim@gmail.com</li>
+        </ul>
+    </main>
+
+    <form action="./Submitaction.html" method="get">
+        <label for="name">Adınız:</label> <br>
+        <input type="text" id="Name" required>
+        <br>
+        <label for="email">E-posta:</label> <br>
+        <input type="email"  id="email" required>
+        <br>
+        <label for="message">Mesajınız:</label> <br>
+        <textarea id="message" rows="4" cols="40"></textarea> <br>
+
+        <input type="submit" value="Gönder">
+
+    </form>
+</body>
+</html>
